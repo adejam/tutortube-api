@@ -20,7 +20,6 @@ class UserController extends Controller
         );
         
         $data = $request->validate($rules);
-        dd($data);
         $user = new User;
         $user->name = $data['name'];
         $user->email = $data['email'];
