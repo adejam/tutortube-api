@@ -44,7 +44,9 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "phpcs": "phpcs . --extensions=php --ignore=vendor",
+        "phpcbf": "phpcbf . --extensions=php --ignore=vendor"
     },
     "extra": {
         "laravel": {
@@ -57,7 +59,5 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "phpcs": "phpcs . --extensions=php --ignore=vendor",
-    "phpcbf": "phpcbf . --extensions=php --ignore=vendor"
+    "prefer-stable": true
 }
