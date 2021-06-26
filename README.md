@@ -25,7 +25,7 @@ The project demonstrates the use of REST API in laravel that can be used across 
 -   Clone the project
 
 ```bash
-git clone https://github.com/adejam/tutortube.git
+git clone https://github.com/adejam/tutortube-api.git
 
 ```
 
