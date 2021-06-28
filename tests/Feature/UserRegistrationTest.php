@@ -118,4 +118,23 @@ class UserRegistrationTest extends TestCase
             ]
         );
     }
+
+    public function test_it_sends_the_user_role()
+    {
+        $this->withoutExceptionHandling();
+        $data = $this->_userRegistrationBaseData();
+        // $user = User::factory()->create(['role' => 'admin']);
+
+        $this->json(
+            'POST',
+            route('register'),
+            $data
+        )->assertStatus(201)->assertJson(
+            function (AssertableJson $json) {
+                $json->has('token')
+                    ->where('role', 'authenticated')
+                    ->etc();
+            }
+        );
+    }
 }

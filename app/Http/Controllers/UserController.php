@@ -21,9 +21,9 @@ class UserController extends Controller
         $user = new User;
         $user->name = $data['name'];
         $user->email = $data['email'];
+        $user->role = 'authenticated';
         $user->password = Hash::make($data['password']);
         $user->save();
-        
         $token = $user->createToken($data['name'] . 'Sign up')->plainTextToken;
         return response(
             [
