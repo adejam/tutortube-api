@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Validation\ValidationException;
-use Validator;
 use Auth;
 
 class UserController extends Controller
@@ -64,5 +62,21 @@ class UserController extends Controller
             ],
             200
         );
+    }
+
+    public function logout()
+    {
+        if (Auth::check()) {
+            $user = Auth::user();
+            Auth::guard('web')->logout();
+            $user->tokens()->delete();
+            
+            return response(
+                [
+                'message' => "Logout Successful"
+                ],
+                204
+            );
+        }
     }
 }
