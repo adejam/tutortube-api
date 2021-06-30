@@ -11,6 +11,26 @@ use DB;
 
 class CommentController extends Controller
 {
+    public function index($video_id)
+    {
+        $video = DB::table('videos')->select('video_id')->where('video_id', '=', $video_id)->first();
+        if (!$video) {
+            return response(['error' => 'This page does not exist.'], 404);
+        };
+        $comments = DB::table('comments')
+            ->join('users', 'users.id', 'comments.user_id')
+            ->select(
+                'video_id',
+                'users.name',
+                'comment',
+            )
+            ->where('video_id', '=', $video_id)
+            ->orderByDesc('comments.created_at')
+            ->get();
+
+        return response(['comments' => $comments], 200);
+    }
+
     public function store(Request $request)
     {
         $rules = array(

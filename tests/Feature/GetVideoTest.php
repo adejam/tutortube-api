@@ -19,7 +19,7 @@ class GetVideoTest extends TestCase
             ->assertStatus(401);
     }
 
-    public function test_that_it_shows_list_of_videos_from_a_category(): void
+    public function test_that_it_shows_list_of_videos_from_a_category()
     {
         $this->withoutExceptionHandling();
         $user = User::factory()->create();

@@ -27,6 +27,7 @@ Route::middleware('auth:api')->get(
 Route::middleware('auth:sanctum')->group(
     function () {
         Route::get('/videos/{category}/{video_id?}', [VideoController::class, 'index'])->name('video.get');
+        Route::get('/comments/{video_id}', [CommentController::class, 'index'])->name('comment.get');
         Route::post('/add-comment', [CommentController::class, 'store'])->name('comment.add');
         Route::get("logout", [UserController::class, 'logout'])->name('logout');
     }
