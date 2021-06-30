@@ -32,6 +32,6 @@ class VideoController extends Controller
             ->orderByDesc('created_at')
             ->get();
 
-        return response($videos, 200);
+        return response([ 'videos' => $videos], 200);
     }
 }

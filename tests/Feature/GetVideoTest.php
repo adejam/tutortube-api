@@ -13,7 +13,7 @@ class GetVideoTest extends TestCase
 {
     use RefreshDatabase, WithFaker;
 
-    public function test_it_allows_only_authenticated_users_only()
+    public function test_it_allows_authenticated_users_only()
     {
         $this->json('GET', route('video.get', ['category' => 'html', 'video_id' => null]))
             ->assertStatus(401);
@@ -29,8 +29,9 @@ class GetVideoTest extends TestCase
         $response->assertStatus(200)
             ->assertJson(
                 fn (AssertableJson $json) =>
-                        $json->has(3)
-                    ->first(
+                        $json->has('videos', 3)
+                    ->has(
+                        'videos.0',
                         fn ($json) =>
                         $json->where('category', 'css')
                             ->etc()
@@ -48,8 +49,8 @@ class GetVideoTest extends TestCase
             ->assertStatus(200)
             ->assertJson(
                 function (AssertableJson $json) use ($video) {
-                    $json->where('video_id', $video->video_id)
-                        ->where('category', $video->category)
+                    $json->where('videos.video_id', $video->video_id)
+                        ->where('videos.category', $video->category)
                         ->etc();
                 }
             );
