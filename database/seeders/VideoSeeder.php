@@ -18,7 +18,7 @@ class VideoSeeder extends Seeder
         DB::table('videos')->insert(array(
             0 => array(
                 'id' => 1,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e64',
+                'video_id' => 'IsXEVQRaTX8',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=IsXEVQRaTX8',
                 'title' => 'HTML5 as Fast As Possible',
@@ -27,7 +27,7 @@ class VideoSeeder extends Seeder
             ),
             1 => array(
                 'id' => 2,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e65',
+                'video_id' => 'MDLn5-zSQQI',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=MDLn5-zSQQI',
                 'title' => 'Next JS Registration flow completed with Formik and Yup validation',
@@ -36,7 +36,7 @@ class VideoSeeder extends Seeder
             ),
             2 => array(
                 'id' => 3,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e66',
+                'video_id' => '3leKYvYL5aw',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=3leKYvYL5aw',
                 'title' => 'Next JS Registration flow completed with Formik and Yup validation',
@@ -45,7 +45,7 @@ class VideoSeeder extends Seeder
             ),
             3 => array(
                 'id' => 4,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e67',
+                'video_id' => '88PXJAA6szs',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=88PXJAA6szs',
                 'title' => 'Next JS Registration flow completed with Formik and Yup validation',
@@ -54,7 +54,7 @@ class VideoSeeder extends Seeder
             ),
             4 => array(
                 'id' => 5,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e68',
+                'video_id' => '-USAeFpVf_A',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=-USAeFpVf_A',
                 'title' => 'Next JS Registration flow completed with Formik and Yup validation',
@@ -63,7 +63,7 @@ class VideoSeeder extends Seeder
             ),
             5 => array(
                 'id' => 6,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e69',
+                'video_id' => '1PnVor36_40',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=1PnVor36_40',
                 'title' => 'Learn CSS in 20 Minutes',
@@ -72,7 +72,7 @@ class VideoSeeder extends Seeder
             ),
             6 => array(
                 'id' => 7,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e70',
+                'video_id' => '6vbgZnQrpbU',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=6vbgZnQrpbU',
                 'title' => 'What is CSS | CSS Explained For Beginners',
@@ -81,7 +81,7 @@ class VideoSeeder extends Seeder
             ),
             7 => array(
                 'id' => 8,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e71',
+                'video_id' => '0afZj1G0BIE',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=0afZj1G0BIE',
                 'title' => 'Learn CSS in 12 minutes',
@@ -90,7 +90,7 @@ class VideoSeeder extends Seeder
             ),
             8 => array(
                 'id' => 9,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e72',
+                'video_id' => 'W6NZfCO5SIk',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=W6NZfCO5SIk',
                 'title' => 'JavaScript tutorial for beginners',
@@ -99,7 +99,7 @@ class VideoSeeder extends Seeder
             ),
             9 => array(
                 'id' => 10,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e73',
+                'video_id' => 'c-I5S_zTwAc',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=c-I5S_zTwAc',
                 'title' => 'Learn JavaScript in just 5 minutes',
@@ -108,7 +108,7 @@ class VideoSeeder extends Seeder
             ),
             10 => array(
                 'id' => 11,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e74',
+                'video_id' => 'Y6aYx_KKM7A',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=Y6aYx_KKM7A',
                 'title' => 'What Is ReactJS? | ReactJS Basics | Learn ReactJS | ReactJS Tutorial For Beginners | Simplilearn',
@@ -117,7 +117,7 @@ class VideoSeeder extends Seeder
             ),
             11 => array(
                 'id' => 12,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e75',
+                'video_id' => 'I7CfaDYzTVM',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=I7CfaDYzTVM',
                 'title' => 'Bootstrap 5 - First Look',
@@ -126,7 +126,7 @@ class VideoSeeder extends Seeder
             ),
             12 => array(
                 'id' => 13,
-                'video_id' => 'fe890840-3c82-11eb-bfcf-f3188657a9e76',
+                'video_id' => 'Sklc_fQBmcs',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=Sklc_fQBmcs',
                 'title' => 'Next.js in 100 Seconds // Plus Full Beginners Tutorial',
