@@ -17,7 +17,7 @@ class VideoSeeder extends Seeder
     {
         DB::table('videos')->insert(array(
             0 => array(
-                // 'id' => 1,
+                'id' => 1,
                 'video_id' => 'IsXEVQRaTX8',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=IsXEVQRaTX8',
@@ -26,7 +26,7 @@ class VideoSeeder extends Seeder
                 'category' => 'html',
             ),
             1 => array(
-                // 'id' => 2,
+                'id' => 2,
                 'video_id' => 'MDLn5-zSQQI',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=MDLn5-zSQQI',
@@ -35,7 +35,7 @@ class VideoSeeder extends Seeder
                 'category' => 'html',
             ),
             2 => array(
-                // 'id' => 3,
+                'id' => 3,
                 'video_id' => '3leKYvYL5aw',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=3leKYvYL5aw',
@@ -44,7 +44,7 @@ class VideoSeeder extends Seeder
                 'category' => 'html',
             ),
             3 => array(
-                // 'id' => 4,
+                'id' => 4,
                 'video_id' => '88PXJAA6szs',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=88PXJAA6szs',
@@ -53,7 +53,7 @@ class VideoSeeder extends Seeder
                 'category' => 'html',
             ),
             4 => array(
-                // 'id' => 5,
+                'id' => 5,
                 'video_id' => '-USAeFpVf_A',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=-USAeFpVf_A',
@@ -62,7 +62,7 @@ class VideoSeeder extends Seeder
                 'category' => 'html',
             ),
             5 => array(
-                // 'id' => 6,
+                'id' => 6,
                 'video_id' => '1PnVor36_40',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=1PnVor36_40',
@@ -71,7 +71,7 @@ class VideoSeeder extends Seeder
                 'category' => 'css',
             ),
             6 => array(
-                // 'id' => 7,
+                'id' => 7,
                 'video_id' => '6vbgZnQrpbU',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=6vbgZnQrpbU',
@@ -80,7 +80,7 @@ class VideoSeeder extends Seeder
                 'category' => 'css',
             ),
             7 => array(
-                // 'id' => 8,
+                'id' => 8,
                 'video_id' => '0afZj1G0BIE',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=0afZj1G0BIE',
@@ -89,7 +89,7 @@ class VideoSeeder extends Seeder
                 'category' => 'css',
             ),
             8 => array(
-                // 'id' => 9,
+                'id' => 9,
                 'video_id' => 'W6NZfCO5SIk',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=W6NZfCO5SIk',
@@ -98,7 +98,7 @@ class VideoSeeder extends Seeder
                 'category' => 'javascript',
             ),
             9 => array(
-                // 'id' => 10,
+                'id' => 10,
                 'video_id' => 'c-I5S_zTwAc',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=c-I5S_zTwAc',
@@ -107,7 +107,7 @@ class VideoSeeder extends Seeder
                 'category' => 'javascript',
             ),
             10 => array(
-                // 'id' => 11,
+                'id' => 11,
                 'video_id' => 'Y6aYx_KKM7A',
                 'user_id' => 1,
                 'url' => 'https://m.youtube.com/watch?v=Y6aYx_KKM7A',
@@ -116,7 +116,7 @@ class VideoSeeder extends Seeder
                 'category' => 'react',
             ),
             11 => array(
-                // 'id' => 12,
+                'id' => 12,
                 'video_id' => 'I7CfaDYzTVM',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=I7CfaDYzTVM',
@@ -125,7 +125,7 @@ class VideoSeeder extends Seeder
                 'category' => 'bootstrap',
             ),
             12 => array(
-                // 'id' => 13,
+                'id' => 13,
                 'video_id' => 'Sklc_fQBmcs',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=Sklc_fQBmcs',
