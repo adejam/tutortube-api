@@ -29,11 +29,11 @@ class GetVideoTest extends TestCase
         $response->assertStatus(200)
             ->assertJson(
                 fn (AssertableJson $json) =>
-                        $json->has('videos', 3)
+                $json->has('videos', 3)
                     ->has(
                         'videos.0',
                         fn ($json) =>
-                        $json->where('category', 'css')
+                            $json->where('category', 'css')
                             ->etc()
                     )
             );
