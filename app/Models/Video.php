@@ -23,6 +23,6 @@ class Video extends Model
 
     public function comments()
     {
-        return $this->hasMany(Comment::class);
+        return $this->hasMany(Comment::class, 'video_id', 'video_id');
     }
 }

@@ -30,8 +30,8 @@ class VideoSeeder extends Seeder
                 'video_id' => 'MDLn5-zSQQI',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=MDLn5-zSQQI',
-                'title' => 'Next JS Registration flow completed with Formik and Yup validation',
-                'description' => 'In this video, we are going to look at the complete code for the registration of the user.',
+                'title' => 'HTML In 10 Minutes | HTML Tutorial For Beginners | HTML Basics For Beginners | Simplilearn',
+                'description' => 'In this Simplilearn "HTML in 10 Minutes" video, we go through the basic concepts of HTML and its various tags. In the end, we also code a simple web page using HTML and CSS, so as to give you a practical perspective on developing a webpage',
                 'category' => 'html',
             ),
             2 => array(
@@ -39,8 +39,8 @@ class VideoSeeder extends Seeder
                 'video_id' => '3leKYvYL5aw',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=3leKYvYL5aw',
-                'title' => 'Next JS Registration flow completed with Formik and Yup validation',
-                'description' => 'In this video, we are going to look at the complete code for the registration of the user.',
+                'title' => 'HTML For Beginners — A Step-By-Step Tutorial (2021)',
+                'description' => 'What is HTML and how does it relate to web development',
                 'category' => 'html',
             ),
             3 => array(
@@ -48,8 +48,8 @@ class VideoSeeder extends Seeder
                 'video_id' => '88PXJAA6szs',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=88PXJAA6szs',
-                'title' => 'Next JS Registration flow completed with Formik and Yup validation',
-                'description' => 'In this video, we are going to look at the complete code for the registration of the user.',
+                'title' => 'HTML Tutorial For Beginners | Learn HTML In 30 Minutes | Designing A Web Page Using HTML',
+                'description' => 'This Edureka video on "HTML Tutorial" will provide you with a detailed and comprehensive knowledge about HTML. In this HTML Tutorial for Beginners you will learn HTML concepts from scratch and also how to create your first web page using HTML Tags',
                 'category' => 'html',
             ),
             4 => array(
@@ -57,8 +57,8 @@ class VideoSeeder extends Seeder
                 'video_id' => '-USAeFpVf_A',
                 'user_id' => 1,
                 'url' => 'https://www.youtube.com/watch?v=-USAeFpVf_A',
-                'title' => 'Next JS Registration flow completed with Formik and Yup validation',
-                'description' => 'In this video, we are going to look at the complete code for the registration of the user.',
+                'title' => 'HTML Tutorial for Beginners - 01 - Creating the first web page',
+                'description' => 'In this video we go over the basic structure of HTML and create our first web page.',
                 'category' => 'html',
             ),
             5 => array(

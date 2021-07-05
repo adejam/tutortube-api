@@ -15,7 +15,7 @@ class CommentController extends Controller
     {
         $video = DB::table('videos')->select('video_id')->where('video_id', '=', $video_id)->first();
         if (!$video) {
-            return response(['error' => 'This page does not exist.'], 404);
+            return response(['error' => 'The page does not exist.'], 404);
         };
         $comments = DB::table('comments')
             ->join('users', 'users.id', 'comments.user_id')
@@ -45,8 +45,8 @@ class CommentController extends Controller
             ->first();
 
         if (!$video) {
-            abort(404);
-        }
+            return response(['error' => 'This page does not exist.'], 404);
+        };
         
         $comment = new Comment;
         $comment->user_id = Auth::user()->id;
