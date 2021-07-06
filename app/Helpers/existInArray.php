@@ -3,6 +3,9 @@
 function existInArray($array, $string)
 {
     foreach ($array as $key => $value) {
-        return $value === $string;
+        if ($value === $string) {
+            return true;
+        };
     }
+    return false;
 }
