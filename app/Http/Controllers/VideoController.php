@@ -53,6 +53,7 @@ class VideoController extends Controller
             ->join('users', 'users.id', 'comments.user_id')
             ->select(
                 'comments.id',
+                'video_id',
                 'users.name',
                 'comment',
             )
