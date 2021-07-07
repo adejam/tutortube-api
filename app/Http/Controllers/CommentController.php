@@ -40,7 +40,7 @@ class CommentController extends Controller
 
         $data = $request->validate($rules);
         $video = DB::table('videos')
-            ->select('video_id')
+            ->select('video_id', 'category')
             ->where('video_id', '=', $request->video_id)
             ->first();
 
@@ -57,6 +57,7 @@ class CommentController extends Controller
             [
             'message' => "Video Added Successfully",
             'comment' => $comment,
+            'category' => $video->category,
             ],
             201
         );
