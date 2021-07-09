@@ -9,7 +9,7 @@ use App\Models\Video;
 
 class VideoController extends Controller
 {
-    public function index($category)
+    public static function index($category)
     {
         $videos = DB::table('videos')->select(
             'video_id',
@@ -33,7 +33,7 @@ class VideoController extends Controller
         return response(['videos' => $videos], 200);
     }
 
-    public function singleVideo($category, $video_id)
+    public static function singleVideo($category, $video_id)
     {
         $video = Video::select(
             'video_id',

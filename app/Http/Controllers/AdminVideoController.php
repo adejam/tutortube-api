@@ -10,6 +10,7 @@ use DB;
 use App\Services\VideoService;
 use App\Rules\YoutubeUrlRule;
 use Illuminate\Support\Str;
+use App\Http\Controllers\VideoController;
 
 class AdminVideoController extends Controller
 {
@@ -18,6 +19,18 @@ class AdminVideoController extends Controller
     public function __construct(VideoService $videoService)
     {
         $this->_videoService = $videoService;
+    }
+
+    public function index($category)
+    {
+        $res = VideoController::index($category);
+        return $res;
+    }
+
+    public function singleVideo($category, $video_id)
+    {
+        $res = VideoController::singleVideo($category, $video_id);
+        return $res;
     }
     
     public function store(Request $request)
