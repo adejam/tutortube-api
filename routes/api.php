@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VideoController;
+use App\Http\Controllers\AdminVideoController;
 use App\Http\Controllers\CommentController;
 
 Route::middleware('auth:api')->get(
@@ -20,6 +21,13 @@ Route::middleware('auth:sanctum')->group(
         Route::get('/comments/{video_id}', [CommentController::class, 'index'])->name('comment.get');
         Route::post('/add-comment', [CommentController::class, 'store'])->name('comment.add');
         Route::get("logout", [UserController::class, 'logout'])->name('logout');
+        /*Admin routes*/
+        Route::group(
+            ['middleware' => ['admin'], 'prefix' => 'admin'],
+            function () {
+                Route::post('/add-video', [AdminVideoController::class, 'store'])->name('video.add');
+            }
+        );
     }
 );
 

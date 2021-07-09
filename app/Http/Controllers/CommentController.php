@@ -55,7 +55,7 @@ class CommentController extends Controller
         $comment->save();
         return response(
             [
-            'message' => "Video Added Successfully",
+            'message' => "Comment Added Successfully",
             'comment' => $comment,
             'category' => $video->category,
             ],
