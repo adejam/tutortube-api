@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Video;
+use App\Models\Comment;
 use Validator;
 use Auth;
 use DB;
@@ -77,6 +78,23 @@ class AdminVideoController extends Controller
             [
             'message' => "Video Updated Successfully",
             'video' => $video,
+            ],
+            200
+        );
+    }
+
+    public function delete(Request $request)
+    {
+        $video = Video::where('video_id', '=', $request->video_id)->first();
+        
+        $comments = Comment::where('video_id', '=', $video->video_id)->get();
+        foreach ($comments as $comment) {
+            $comment->delete();
+        }
+        $video->delete();
+        return response(
+            [
+            'message' => 'video deleted successfully'
             ],
             200
         );

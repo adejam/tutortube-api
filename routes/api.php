@@ -27,6 +27,7 @@ Route::middleware('auth:sanctum')->group(
             function () {
                 Route::post('/add-video', [AdminVideoController::class, 'store'])->name('video.add');
                 Route::post('/update-video', [AdminVideoController::class, 'update'])->name('video.update');
+                Route::post('/delete-video', [AdminVideoController::class, 'delete'])->name('video.delete');
                 Route::get('/videos/{category}', [AdminVideoController::class, 'index'])
                 ->name('admin.videos.get');
                 Route::get('/videos/{category}/{video_id}', [AdminVideoController::class, 'singleVideo'])
