@@ -26,6 +26,7 @@ Route::middleware('auth:sanctum')->group(
             ['middleware' => ['admin'], 'prefix' => 'admin'],
             function () {
                 Route::post('/add-video', [AdminVideoController::class, 'store'])->name('video.add');
+                Route::post('/update-video', [AdminVideoController::class, 'update'])->name('video.update');
                 Route::get('/videos/{category}', [AdminVideoController::class, 'index'])
                 ->name('admin.videos.get');
                 Route::get('/videos/{category}/{video_id}', [AdminVideoController::class, 'singleVideo'])

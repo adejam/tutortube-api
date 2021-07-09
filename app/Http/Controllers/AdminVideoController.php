@@ -52,4 +52,33 @@ class AdminVideoController extends Controller
             201
         );
     }
+
+    public function update(Request $request)
+    {
+        $rules = array(
+            'title' => ['required', 'string', 'max:191'],
+            'description' => ['required', 'string', 'max:1000'],
+        );
+
+        $video = Video::where('video_id', '=', $request->video_id)
+            ->first();
+
+        if (!$video) {
+            return response(['error' => 'The page does not exist.'], 404);
+        }
+
+        $data = request()->validate($rules);
+
+        $video->title = $data['title'];
+        $video->description = $data['description'];
+        $video->save();
+
+        return response(
+            [
+            'message' => "Video Updated Successfully",
+            'video' => $video,
+            ],
+            200
+        );
+    }
 }
