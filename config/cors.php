@@ -15,7 +15,14 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['api/*',
+                '/login',
+                '/logout',
+                '/videos/{category}/{video_id?}',
+                '/register',
+                '/comments/{video_id}',
+                '//add-comment',
+               ],
 
     'allowed_methods' => ['*'],
 
@@ -29,6 +36,6 @@ return [
 
     'max_age' => 0,
 
-    'supports_credentials' => false,
+    'supports_credentials' => true,
 
 ];

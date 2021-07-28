@@ -1,0 +1,25 @@
+name: Checks
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+
+  phpcs:
+    name: PHPcs
+    runs-on: ubuntu-18.04
+    if: always()
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+      - name: Install required dependency for Composer
+        uses: php-actions/composer@v4
+        with:
+          php_version: 7.4
+          composer_version: 1
+          args: --profile --ignore-platform-reqs  --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+      - name: Composer Report
+        run: composer phpcs

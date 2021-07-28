@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<ruleset name="MyStandard">
+    <description>My custom coding standard.</description>
+
+    <exclude-pattern>.github/</exclude-pattern>
+    <exclude-pattern>*/database/*</exclude-pattern>
+    <exclude-pattern>*/cache/*</exclude-pattern>
+    <exclude-pattern>*/autoload.php</exclude-pattern>
+    <exclude-pattern>*/*\.(xml|css|js|blade.php)$</exclude-pattern>
+    <exclude-pattern>*/storage/*</exclude-pattern>
+    <exclude-pattern>*/docs/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/app/Actions/Jetstream/*</exclude-pattern>
+    <exclude-pattern>*/app/Actions/Fortify/*</exclude-pattern>
+    <exclude-pattern>*/migrations/*</exclude-pattern>
+    <exclude-pattern>*/app/Http/Middleware/Authenticate.php</exclude-pattern>
+    <exclude-pattern>*/app/Http/Middleware/RedirectIfAuthenticated.php</exclude-pattern>
+    <exclude-pattern>*/app/Console/Kernel.php</exclude-pattern>
+
+    <config name="testVersion" value="7.0-"/>
+
+    <arg name="extensions" value="php"/>
+    <arg value="s"/>
+
+    <rule ref="PEAR">
+        <exclude name="PEAR.Commenting.FileComment.Missing"/>
+        <exclude name="PEAR.Commenting.FunctionComment.MissingParamTag"/>
+        <exclude name="PEAR.Commenting.FileComment.WrongStyle"/>
+        <exclude name="PEAR.Commenting.ClassComment.Missing"/>
+        <exclude name="PEAR.Commenting.FunctionComment.Missing"/>
+        <exclude name="Generic.PHP.DisallowShortOpenTag"/>
+        <exclude name="Generic.WhiteSpace.ScopeIndent"/>
+        <exclude name="PEAR.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
+        <properties>
+            <property name="lineLimit" value="5000"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+</ruleset>
